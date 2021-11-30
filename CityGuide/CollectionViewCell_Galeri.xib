@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell_Galeri" customModule="CityGuide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="233"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="233"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TnI-nN-d8J">
+                        <rect key="frame" x="16" y="10" width="300" height="170"/>
+                        <color key="backgroundColor" red="0.8862745098" green="0.76862745099999996" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="Mnj-5N-mdS"/>
+                            <constraint firstAttribute="width" constant="300" id="pmH-1k-LQ9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHR-g2-rgg">
+                        <rect key="frame" x="16" y="185" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="TnI-nN-d8J" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="0ou-o2-Yrd"/>
+                <constraint firstItem="TnI-nN-d8J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="5vt-4d-ZY5"/>
+                <constraint firstItem="CHR-g2-rgg" firstAttribute="top" secondItem="TnI-nN-d8J" secondAttribute="bottom" constant="5" id="Bsn-Se-dAm"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TnI-nN-d8J" secondAttribute="trailing" constant="16" id="UTp-T1-fhc"/>
+                <constraint firstItem="CHR-g2-rgg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="dV2-8o-4qr"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TnI-nN-d8J" secondAttribute="bottom" constant="40" id="lrg-tB-00b"/>
+            </constraints>
+            <size key="customSize" width="336" height="233"/>
+            <connections>
+                <outlet property="imageGaleri" destination="TnI-nN-d8J" id="qxg-sf-0yX"/>
+                <outlet property="lblGaleri" destination="CHR-g2-rgg" id="W5p-TZ-Fb0"/>
+            </connections>
+            <point key="canvasLocation" x="-339.13043478260875" y="55.245535714285715"/>
+        </collectionViewCell>
+    </objects>
+</document>

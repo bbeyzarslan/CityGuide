@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GT-Eesti-Display-Regular.otf">
+            <string>GTEestiDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell_GidYerler" customModule="CityGuide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="212" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="212" height="195"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0XS-2P-eEi">
+                        <rect key="frame" x="31" y="0.0" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Cyi-qC-caR"/>
+                            <constraint firstAttribute="height" constant="150" id="ivt-Ed-w7F"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VND-Jb-hMK">
+                        <rect key="frame" x="10" y="155" width="40.5" height="20"/>
+                        <fontDescription key="fontDescription" name="GTEestiDisplay-Regular" family="GT Eesti Display" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="6qc-Cq-uu7"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VND-Jb-hMK" secondAttribute="bottom" constant="20" id="DRN-xl-BPv"/>
+                <constraint firstItem="0XS-2P-eEi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NUC-MJ-iGC"/>
+                <constraint firstItem="VND-Jb-hMK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Os3-Rh-KHF"/>
+                <constraint firstItem="0XS-2P-eEi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QM1-vM-ITA"/>
+                <constraint firstItem="VND-Jb-hMK" firstAttribute="top" secondItem="0XS-2P-eEi" secondAttribute="bottom" constant="5" id="bNK-8h-dSa"/>
+                <constraint firstItem="0XS-2P-eEi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="fQh-Gg-RJh"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0XS-2P-eEi" secondAttribute="trailing" constant="10" id="sed-Fg-AQy"/>
+            </constraints>
+            <size key="customSize" width="212" height="195"/>
+            <connections>
+                <outlet property="imageYer" destination="0XS-2P-eEi" id="jd7-dT-EYR"/>
+                <outlet property="lblYer" destination="VND-Jb-hMK" id="fxR-BY-SPV"/>
+            </connections>
+            <point key="canvasLocation" x="-252.17391304347828" y="7.7008928571428568"/>
+        </collectionViewCell>
+    </objects>
+</document>
